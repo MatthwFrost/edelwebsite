@@ -1,13 +1,84 @@
+<script>
+    let source;
+    async function getAudio(){
+        const get = false;
+        try {
+            if (source){
+                source.stop();
+                source = undefined;
+            }else{
+            if (get) {
+                    const sentence = "Welcome, This is an example of what the voice quality is like when using this extension! Don't believe me!? why not download and give it a go! - I hope you enjoy using the application, if you have feedback, an error or a question, use the links below."
+                    const url = `https://x6oh96vkd8.execute-api.eu-central-1.amazonaws.com/fetchAudioAPI/?sentence=${sentence}&index=0&voice=british-male&quality=high`;
+
+                    const res = await fetch(url);
+                    const response = await res.json();
+                    const readyToPlay = base64ToArrayBuffer(response.audioBase64);
+                    playAudio(readyToPlay)
+                    console.log(response.audioBase64);
+                }else {
+                    const response = await fetch("audio.txt");
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    // Extract the text from the response stream
+                    const text = await response.text();
+                    const audioData = text;
+                    const readyToPlay = base64ToArrayBuffer(audioData);
+                    playAudio(readyToPlay)
+                }
+            }
+        } catch (error) {
+            console.error('Error in fetchTTS:', error);
+            throw error;  // Re-throw the error for further handling if necessary
+        }
+    }
+
+    function base64ToArrayBuffer(base64) {
+        // Trim whitespace and line breaks from the base64 string
+        var trimmedBase64 = base64.replace(/\s+/g, '');
+        try {
+            var binaryString = atob(trimmedBase64);
+            var bytes = new Uint8Array(binaryString.length);
+            for (var i = 0; i < binaryString.length; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            return bytes.buffer;
+        } catch (error) {
+            console.error('Error in base64ToArrayBuffer:', error);
+            throw error;  // Re-throw the error for further handling if necessary
+        }
+    }
+    function playAudio(audioData, onEnded) {
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        audioContext.decodeAudioData(audioData, buffer => {
+            source = audioContext.createBufferSource();
+            source.buffer = buffer;
+            source.connect(audioContext.destination);
+            source.addEventListener('ended', onEnded);
+            source.start();
+        }, error => {
+            console.error('Error decoding audio data:', error);
+        });
+    }
+</script>
+
 <div class="main-container">
-    <h1>Welcome to Edel.</h1>
+    <h1>Welcome to Edel.<img src="/newicon.png" alt="Edel icon"></h1>
     <p>Minimal text-to-speech chrome extension.</p>
     <div class="links-container">
-        <a href="" target="_blank">Install <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Feeback <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="https://twitter.com/matthwfrst" target="_blank">Contact <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="/privacy" target="_blank">Privacy <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Feeback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://twitter.com/matthwfrst" target="_blank">Contact<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="/privacy" target="_blank">Privacy<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
     </div>
+    {#if source}
+        <button on:click={() => getAudio()}>Stop the example</button>
+    {:else}
+        <button on:click={() => getAudio()}>Play an example</button>
+    {/if}
 </div>
 
 <style>
@@ -19,11 +90,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        line-height: 5px;
+        line-height: 2px;
     }
     .links-container {
-        width: 450px;
-        margin: 10px;
+        width: 550px;
+        margin: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -32,5 +103,45 @@
     }
     h1 {
         font-size: 50px;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    p {
+        margin: 0 auto;
+    }
+    button{
+        background-color: #222;
+        border-radius: 4px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 200px;
+        min-height: 44px;
+        min-width: 10px;
+        outline: none;
+        overflow: hidden;
+        padding: 9px 20px 8px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+    }
+
+    button:hover,
+    button:focus {
+        opacity: .75;
     }
 </style>
