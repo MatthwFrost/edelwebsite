@@ -65,20 +65,25 @@
 </script>
 
 <div class="main-container">
-    <h1>Welcome to Edel.<img src="/newicon.png" alt="Edel icon"></h1>
-    <p>Minimal text-to-speech chrome extension.</p>
-    <div class="links-container">
-        <a href="" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Feeback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="https://twitter.com/matthwfrst" target="_blank">Contact<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="/privacy" target="_blank">Privacy<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    <div>
+        <h1>Welcome to Edel.<img src="/newicon.png" alt="Edel icon"></h1>
+        <p>Minimal text-to-speech chrome extension.</p>
+        <div class="links-container">
+            <a href="" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Give Feeback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="https://twitter.com/matthwfrst" target="_blank">Contact<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            <a href="/privacy" target="_blank">Privacy<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        </div>
+        {#if source}
+            <button on:click={() => getAudio()}>Stop the example</button>
+        {:else}
+            <button on:click={() => getAudio()}>Play an example</button>
+        {/if}
     </div>
-    {#if source}
-        <button on:click={() => getAudio()}>Stop the example</button>
-    {:else}
-        <button on:click={() => getAudio()}>Play an example</button>
-    {/if}
+     <div class="bottom-nav">
+        <p>Beta release. Feb 2024</p>
+    </div>
 </div>
 
 <style>
@@ -93,7 +98,7 @@
         line-height: 2px;
     }
     .links-container {
-        width: 550px;
+        width: 35vw;
         margin: 50px;
         display: flex;
         flex-direction: row;
@@ -103,6 +108,8 @@
     }
     h1 {
         font-size: 50px;
+        font-weight: 400;
+        letter-spacing: 2px;
     }
     img {
         width: 50px;
@@ -111,6 +118,7 @@
     }
     p {
         margin: 0 auto;
+        color: #666;
     }
     button{
         background-color: #222;
@@ -122,7 +130,7 @@
         display: inline-block;
         font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 1.5;
         margin: 0;
         max-width: 200px;
@@ -139,9 +147,19 @@
         touch-action: manipulation;
         width: 100%;
     }
-
-    button:hover,
-    button:focus {
-        opacity: .75;
+    a {
+        color: black;
+    }
+    a:active {
+        color: none;
+    }
+    .bottom-nav {
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 20px;
+        font-size: 12px;
     }
 </style>
