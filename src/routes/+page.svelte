@@ -1,29 +1,35 @@
-<body>
-    <h1>Privacy Policy for Edel</h1>
-    <p><strong>Effective date:</strong> 08/02/2024</p>
-    <p>This Privacy Policy describes how Edel ("we", "our", or "us") collects, uses, and protects your personal information when you use our services. We are committed to ensuring the privacy and security of your information and handling it in accordance with our privacy practices outlined below.</p>
-    <h2>Information Collection and Use</h2>
-    <p>When you interact with our services, we collect the following personal information from you:</p>
-    <ul>
-        <li><strong>Profile Image:</strong> To help us keep track of the characters you have used.</li>
-        <li><strong>User ID:</strong> Assigned to you for identification and tracking purposes within our services.</li>
-    </ul>
-    <p>This information is used solely for the purpose of tracking the characters used by you and is not used for any other purpose.</p>
-    <h2>Data Sharing and Third-Party Disclosure</h2>
-    <p>We do not share your personal information (profile images and user IDs) with any third parties.</p>
-    <h2>User Rights</h2>
-    <p>You have the right to access your personal information that we hold. However, it is important to note that users cannot delete their user ID. For modifications or questions regarding your personal information, please contact us using the details provided below.</p>
-    <h2>Data Protection</h2>
-    <p>We take the security of your personal information seriously and employ secure servers to protect the information we collect from you.</p>
-    <h2>International Privacy Regulations</h2>
-    <p>Edel does not specifically comply with international privacy regulations such as GDPR or CCPA. However, we are committed to protecting user privacy and ensuring the secure handling of personal information.</p>
-    <h2>Contact Information</h2>
-    <p>If you have any questions or concerns about this Privacy Policy or the handling of your personal information, please contact us via email at <a href="mailto:matthwfrost@gmail.com">matthwfrost@gmail.com</a>.</p>
+<div class="main-container">
+    <h1>Welcome to Edel.</h1>
+    <p>Minimal text-to-speech chrome extension.</p>
+    <div class="links-container">
+        <a href="" target="_blank">Install <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Feeback <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://twitter.com/matthwfrst" target="_blank">Contact <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    </div>
+</div>
 
-
-</body>
 <style>
+    .main-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 5px;
+    }
+    .links-container {
+        width: 400px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        text-align: center;
+    }
     h1 {
-        font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+        font-size: 50px;
     }
 </style>
