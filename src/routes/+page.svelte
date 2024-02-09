@@ -28,6 +28,7 @@
                     const readyToPlay = base64ToArrayBuffer(audioData);
                     playAudio(readyToPlay)
                 }
+                source = undefined;
             }
         } catch (error) {
             console.error('Error in fetchTTS:', error);
@@ -98,6 +99,7 @@
         line-height: 2px;
     }
     .links-container {
+        min-width: 500px;
         width: 35vw;
         margin: 50px;
         display: flex;
@@ -109,7 +111,7 @@
     h1 {
         font-size: 50px;
         font-weight: 400;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
     img {
         width: 50px;
@@ -149,6 +151,8 @@
     }
     a {
         color: black;
+        display: flex;
+        justify-content: center;
     }
     a:active {
         color: none;
