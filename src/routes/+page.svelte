@@ -69,18 +69,22 @@
     <div>
         <h1>Welcome to Edel.<img src="/newicon.png" alt="Edel icon"></h1>
         <p>Minimal text-to-speech chrome extension.</p>
-        <div class="links-container">
-            <a href="" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Give Feeback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            <a href="https://twitter.com/matthwfrst" target="_blank">Contact<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-            <a href="/privacy" target="_blank">Privacy<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <div class="links">
+            <div class="links-container">
+                <a href="" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Give Feeback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="https://twitter.com/matthwfrst" target="_blank">Contact<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="/privacy" target="_blank">Privacy<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
         </div>
-        {#if source}
-            <button on:click={() => getAudio()}>Stop the example</button>
-        {:else}
-            <button on:click={() => getAudio()}>Play an example</button>
-        {/if}
+        <div class="button-container">
+            {#if source}
+                <button on:click={() => getAudio()}>Stop the example</button>
+            {:else}
+                <button on:click={() => getAudio()}>Play an example</button>
+            {/if}
+        </div>
     </div>
      <div class="bottom-nav">
         <p>Beta release. Feb 2024</p>
@@ -97,6 +101,12 @@
         align-items: center;
         text-align: center;
         line-height: 2px;
+    }
+    .links {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .links-container {
         min-width: 500px;
@@ -122,37 +132,73 @@
         margin: 0 auto;
         color: #666;
     }
-    button{
-        background-color: #222;
-        border-radius: 4px;
-        border-style: none;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        margin: 0;
-        max-width: 200px;
-        min-height: 44px;
-        min-width: 10px;
-        outline: none;
-        overflow: hidden;
-        padding: 9px 20px 8px;
-        position: relative;
-        text-align: center;
-        text-transform: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        width: 100%;
+    .button-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+    align-items: center;
+    background-color: skyblue;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+    button:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+    }
+
+    button:hover:after {
+    transform: translate(0, 0);
+    }
+
+    button:active {
+    background-color: #ffdeda;
+    outline: 0;
+    }
+
+    button:hover {
+    outline: 0;
+    }
+
+    @media (min-width: 768px) {
+    button {
+        padding: 0 40px;
+    }
     }
     a {
         color: black;
-        display: flex;
-        justify-content: center;
+        text-decoration: none;
+        font-weight: 500;
     }
     a:active {
         color: none;
