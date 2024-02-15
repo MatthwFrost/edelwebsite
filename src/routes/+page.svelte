@@ -1,6 +1,17 @@
 <script>
     let source;
+    let show = null;
+
+    let currentDate = new Date();
+  
+    // Format the date as a string (e.g., "October 5, 2023")
+    let dateString = currentDate.toLocaleDateString('en-UK', {
+        year: 'numeric',
+        month: 'short',
+    });
+
     async function getAudio(){
+        show = true;
         const get = false;
         try {
             if (source){
@@ -71,7 +82,7 @@
         <p>Minimal text-to-speech chrome extension.</p>
         <div class="links">
             <div class="links-container">
-                <a href="" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+                <a href="https://chromewebstore.google.com/detail/edel-ai-text-to-speech/mleknmnljocojhodiblcnbgffbhckihd" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                 <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                 <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Give Feeback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
                 <a href="https://twitter.com/matthwfrst" target="_blank">Contact<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
@@ -80,14 +91,15 @@
         </div>
         <div class="button-container">
             {#if source}
-                <button on:click={() => getAudio()}>Stop the example</button>
+                <button on:click={() => getAudio()}>Stop sample</button>
             {:else}
-                <button on:click={() => getAudio()}>Play an example</button>
+                <button on:click={() => getAudio()}>Play sample</button>
             {/if}
+            <p>Play a sample of what the extension will sound like. ( Edel voice: "Matt" )</p>
         </div>
     </div>
      <div class="bottom-nav">
-        <p>Beta release. Feb 2024</p>
+        <p>Beta release. {dateString}</p>
     </div>
 </div>
 
@@ -135,31 +147,33 @@
     .button-container {
         width: 100vw;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     button {
-    align-items: center;
-    background-color: skyblue;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    font-family: Inter,sans-serif;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+        align-items: center;
+        background-color: skyblue;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        display: flex;
+        font-family: Inter,sans-serif;
+        font-size: 16px;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin: 30px;
     }
 
     button:after {
@@ -211,5 +225,10 @@
         text-align: center;
         margin: 20px;
         font-size: 12px;
+    }
+    .welcome-text{
+        width: 400px;
+        height: 350px;
+        margin-bottom: 20px;
     }
 </style>
