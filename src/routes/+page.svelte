@@ -95,7 +95,6 @@
             {:else}
                 <button on:click={() => getAudio()}>Play sample</button>
             {/if}
-            <p>Play a sample of what the extension will sound like. ( Edel voice: "Matt" )</p>
         </div>
     </div>
      <div class="bottom-nav">
@@ -132,7 +131,7 @@
     }
     h1 {
         font-size: 50px;
-        font-weight: 400;
+        font-weight: 700;
         letter-spacing: 1px;
     }
     img {
@@ -142,7 +141,6 @@
     }
     p {
         margin: 0 auto;
-        color: #666;
     }
     .button-container {
         width: 100vw;
@@ -210,9 +208,9 @@
     }
     }
     a {
-        color: black;
         text-decoration: none;
         font-weight: 500;
+        color: #2f2e2f;
     }
     a:active {
         color: none;
