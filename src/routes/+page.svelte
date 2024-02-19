@@ -78,7 +78,7 @@
 
 <div class="main-container">
     <div>
-        <h1>Welcome to Edel.<img src="/newicon.png" alt="Edel icon"></h1>
+        <h1><img src="/newicon.png" alt="Edel icon"> Welcome to Edel.</h1>
         <p>Minimal text-to-speech chrome extension.</p>
         <div class="links">
             <div class="links-container">
@@ -97,7 +97,7 @@
             {/if}
         </div>
     </div>
-     <div class="bottom-nav">
+    <div class="bottom-nav">
         <p>Beta release. {dateString}</p>
     </div>
 </div>
@@ -110,7 +110,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
         line-height: 2px;
     }
     .links {
@@ -133,6 +132,7 @@
         font-size: 50px;
         font-weight: 700;
         letter-spacing: 1px;
+        text-align: center;
     }
     img {
         width: 50px;
@@ -141,6 +141,7 @@
     }
     p {
         margin: 0 auto;
+        text-align: center;
     }
     .button-container {
         width: 100vw;
