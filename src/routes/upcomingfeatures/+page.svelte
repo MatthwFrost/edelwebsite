@@ -40,7 +40,8 @@
 
 <style>
     .main-container {
-        height: 100vh;
+        min-height: 100vh;
+        height: full;
         background-color: #01634F;
         padding: 5vw;
         color: #F7CDD4;
@@ -58,7 +59,7 @@
     li {
         font-size: 40px;
         font-weight: 700;
-        margin-bottom: 5vh;
+        margin-top: 5vh;
     }
     .li-p {
         font-size: 15px;
