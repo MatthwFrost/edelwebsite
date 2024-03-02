@@ -76,6 +76,9 @@
     }
 </script>
 
+<div class="banner">
+    <span>There has been failure with Edel. An update is being released soon, addressing this issue.</span>
+</div>
 <div class="main-container">
     <div>
         <h1><img src="/newicon.png" alt="Edel icon"> Welcome to Edel.</h1>
@@ -104,16 +107,27 @@
 
 <style>
     .main-container {
-        width: 100vw;
         height: 100vh;
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         line-height: 2px;
     }
+    .banner {
+        height: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff4122;
+        color: #2f2e2f;
+        font-size: 16px;
+        text-align: center;
+    }
     .links {
-        width: 100vw;
+        width: 100;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -144,7 +158,7 @@
         text-align: center;
     }
     .button-container {
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
