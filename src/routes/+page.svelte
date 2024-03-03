@@ -107,27 +107,16 @@
 
 <style>
     .main-container {
+        width: 100vw;
         height: 100vh;
-        margin: 0;
-        padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         line-height: 2px;
     }
-    .banner {
-        height: 4vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #ff4122;
-        color: #2f2e2f;
-        font-size: 16px;
-        text-align: center;
-    }
     .links {
-        width: 100;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,7 +147,7 @@
         text-align: center;
     }
     .button-container {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
