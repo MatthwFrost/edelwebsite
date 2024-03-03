@@ -76,9 +76,9 @@
     }
 </script>
 
-<div class="banner">
+<!-- <div class="banner">
     <span>There has been failure with Edel. An update is being released soon, addressing this issue.</span>
-</div>
+</div> -->
 <div class="main-container">
     <div>
         <h1><img src="/newicon.png" alt="Edel icon"> Welcome to Edel.</h1>
@@ -155,7 +155,7 @@
     }
     button {
         align-items: center;
-        background-color: skyblue;
+        background-color: #fef118;
         border: 2px solid #111;
         border-radius: 8px;
         box-sizing: border-box;
