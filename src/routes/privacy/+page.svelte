@@ -1,7 +1,7 @@
 <body>
-    <h1>Privacy Policy for Edel - Beta</h1>
+    <h1>Privacy Policy for Readel - Beta</h1>
     <p><strong>Effective date:</strong> 08/02/2024</p>
-    <p>This Privacy Policy describes how Edel ("we", "our", or "us") collects, uses, and protects your personal information when you use our services. We are committed to ensuring the privacy and security of your information and handling it in accordance with our privacy practices outlined below.</p>
+    <p>This Privacy Policy describes how Readel("we", "our", or "us") collects, uses, and protects your personal information when you use our services. We are committed to ensuring the privacy and security of your information and handling it in accordance with our privacy practices outlined below.</p>
     <h2>Information Collection and Use</h2>
     <p>When you interact with our services, we collect the following personal information from you:</p>
     <ul>

@@ -15,11 +15,11 @@
         </li>
         <li>
             Read PDFs
-            <p class="li-p">Currently, Edel doesn't work in PDF.</p>
+            <p class="li-p">Currently, Readel doesn't work in PDF.</p>
         </li>
         <li>
             Speed up reader
-            <p class="li-p">Is Edel's voice too slow? Soon, you will be able to increase the speed.</p>
+            <p class="li-p">Is Readel's voice too slow? Soon, you will be able to increase the speed.</p>
         </li>
         <li>
             Shortcuts to start reading

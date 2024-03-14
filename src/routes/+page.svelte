@@ -1,7 +1,8 @@
 <script>
+    import { fade } from 'svelte/transition';
+    import { onMount } from 'svelte';
     let source;
     let show = null;
-
     let currentDate = new Date();
   
     // Format the date as a string (e.g., "October 5, 2023")
@@ -74,163 +75,90 @@
             console.error('Error decoding audio data:', error);
         });
     }
+
+    let currentIndex = 0;
+    const texts = [
+        "Listen to an exciting Reddit story.",
+        "Listen to a Wikipedia article while browsing.",
+        "Spot grammar errors by listening to your writing.",
+        "Listen to long articles."
+    ];
+
+    // Function to cycle texts
+    function cycleText() {
+        currentIndex = (currentIndex + 1) % texts.length;
+    }
+
+    // Start the cycle on component mount
+    onMount(() => {
+        const interval = setInterval(cycleText, 4000); // Change text every 4 seconds
+
+        return () => {
+            clearInterval(interval); // Cleanup on component unmount
+        };
+    });
 </script>
 
 <!-- <div class="banner">
     <span>There has been failure with Edel. An update is being released soon, addressing this issue.</span>
 </div> -->
-<div class="main-container">
-    <div>
-        <h1><img src="/newicon.png" alt="Edel icon"> Welcome to Edel.</h1>
-        <p>Minimal text-to-speech chrome extension.</p>
-        <div class="links">
-            <div class="links-container">
-                <a href="https://chromewebstore.google.com/detail/edel-ai-text-to-speech/mleknmnljocojhodiblcnbgffbhckihd" target="_blank">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-                <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-                <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Give Feeback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-                <a href="https://twitter.com/matthwfrst" target="_blank">Contact<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-                <a href="/privacy" target="_blank">Privacy<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+<main class="w-[100vw] h-[100vh] flex justify-center items-center bg-cover" style="background-image: url('/buycredits_backgorund.png')">
+    <div class="flex flex-col items-center">
+        <div class="flex flex-row">
+            <img src="/newicon.png" alt="Edel icon" class="w-24">
+            <h1 class="text-8xl font-bold"> Readel.</h1>
+        </div>
+        <div class="flex flex-row">
+            <div class="p-2 font-medium">
+                Minimal <strong>text-to-speech</strong> browser extension. 
             </div>
         </div>
-        <div class="button-container">
-            {#if source}
-                <button on:click={() => getAudio()}>Stop sample</button>
-            {:else}
-                <button on:click={() => getAudio()}>Play sample</button>
-            {/if}
+        <div class="flex flex-row pt-10">
+            <div class="flex flex-row  space-x-8 font-medium">
+                <div class="flex flex-row items-center justify-center">
+                    <a class="mr-2" href="https://chromewebstore.google.com/detail/edel-ai-text-to-speech/mleknmnljocojhodiblcnbgffbhckihd" target="_blank">Install</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </div>
+                <div class="flex flex-row items-center justify-center">
+                    <a class="mr-2" href="/buycredits">Buy credits</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </div>
+                <div class="flex flex-row items-center justify-center">
+                    <a class="mr-2" href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </div>
+                <div class="flex flex-row items-center justify-center">
+                    <a class="mr-2" href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Give Feeback</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </div>
+                <div class="flex flex-row items-center justify-center">
+                    <a class="mr-2" href="https://twitter.com/matthwfrst" target="_blank">Contact</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </div>
+                <div class="flex flex-row items-center justify-center">
+                    <a class="mr-2" href="/privacy" target="_blank">Privacy</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </div>
+            </div>
+        </div>
+        <div class="m-10">
+            <button on:click={() => getAudio()} type="button" class="text-blue-100 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{source ? 'Pause audio' : 'Play sample'}</button>
         </div>
     </div>
-    <div class="bottom-nav">
-        <p>Beta release. {dateString}</p>
-    </div>
-</div>
+</main>
+
 
 <style>
-    .main-container {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 2px;
-    }
-    .links {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .links-container {
-        min-width: 500px;
-        width: 35vw;
-        margin: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style: none;
-        text-align: center;
-    }
-    h1 {
-        font-size: 50px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-align: center;
-    }
-    img {
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
-    }
-    p {
-        margin: 0 auto;
-        text-align: center;
-    }
-    .button-container {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    button {
-        align-items: center;
-        background-color: #fef118;
-        border: 2px solid #111;
-        border-radius: 8px;
-        box-sizing: border-box;
-        color: #111;
-        cursor: pointer;
-        display: flex;
-        font-family: Inter,sans-serif;
-        font-size: 16px;
-        height: 48px;
-        justify-content: center;
-        line-height: 24px;
-        max-width: 100%;
-        padding: 0 25px;
+    .sub-subheading {
         position: relative;
-        text-align: center;
-        text-decoration: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        margin: 30px;
+        height: 50px; /* Ensure this is enough for one line of text */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
-
-    button:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-    }
-
-    button:hover:after {
-    transform: translate(0, 0);
-    }
-
-    button:active {
-    background-color: #ffdeda;
-    outline: 0;
-    }
-
-    button:hover {
-    outline: 0;
-    }
-
-    @media (min-width: 768px) {
-    button {
-        padding: 0 40px;
-    }
-    }
-    a {
-        text-decoration: none;
-        font-weight: 500;
-        color: #2f2e2f;
-    }
-    a:active {
-        color: none;
-    }
-    .bottom-nav {
-        position: fixed; 
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
-        margin: 20px;
-        font-size: 12px;
-    }
-    .welcome-text{
-        width: 400px;
-        height: 350px;
-        margin-bottom: 20px;
+    .sub-subheading div {
+        position: absolute;
+        width: 100%;
     }
 </style>
