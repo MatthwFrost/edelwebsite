@@ -1,7 +1,7 @@
 <div class="main-container">
     <h1><img src="/newicon.png" alt="Edel icon"> Upcoming features</h1>
     <p>
-        A list of the upcoming features I am working on. Please submit your <a href="">feedback</a>, if you have any ideas.
+        A list of the upcoming features I am working on. Please submit your <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L">feedback</a>, if you have any ideas.
     </p>
     <div class="divider"></div>
     <ul class="list">

@@ -12,7 +12,7 @@ export const POST = async ({request, res}) => {
         console.log(price_key[data.id]);
 
         const session = await stripe.checkout.sessions.create({
-            success_url: 'https://example.com/success',
+            success_url: 'https://readel.app/success',
             line_items: [
               {
                 price: price_key[data.id],

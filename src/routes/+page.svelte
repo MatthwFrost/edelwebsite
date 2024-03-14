@@ -105,8 +105,8 @@
 <main class="w-[100vw] h-[100vh] flex justify-center items-center bg-cover" style="background-image: url('/buycredits_backgorund.png')">
     <div class="flex flex-col items-center">
         <div class="flex flex-row">
-            <img src="/newicon.png" alt="Edel icon" class="w-24">
-            <h1 class="text-8xl font-bold"> Readel.</h1>
+            <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14">
+            <h1 class="lg:text-8xl text-6xl font-bold"> Readel.</h1>
         </div>
         <div class="flex flex-row">
             <div class="p-2 font-medium">
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="flex flex-row pt-10">
-            <div class="flex flex-row  space-x-8 font-medium">
+            <div class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 font-medium">
                 <div class="flex flex-row items-center justify-center">
                     <a class="mr-2" href="https://chromewebstore.google.com/detail/edel-ai-text-to-speech/mleknmnljocojhodiblcnbgffbhckihd" target="_blank">Install</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -146,19 +146,3 @@
         </div>
     </div>
 </main>
-
-
-<style>
-    .sub-subheading {
-        position: relative;
-        height: 50px; /* Ensure this is enough for one line of text */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-    .sub-subheading div {
-        position: absolute;
-        width: 100%;
-    }
-</style>
