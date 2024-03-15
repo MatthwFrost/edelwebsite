@@ -31,6 +31,7 @@
     let selectedOption = null;
 
     function getCheckout(){
+        console.log(entered);
         fetch("/api/checkout", {
             method: 'POST',
             headers: {
@@ -38,7 +39,8 @@
                 'Accept': 'application/json',
             },
             body: JSON.stringify({
-                id: selectedOption
+                id: selectedOption,
+                email: entered,
             })
         }).then(res => {
             if (res.ok){
@@ -46,6 +48,7 @@
             }
             return res.json().then(json => Promise.reject(json))
         }).then(({ url }) => {
+            // console.log(url)
             window.location = url;
         }).catch(e => {
             console.error(e);
