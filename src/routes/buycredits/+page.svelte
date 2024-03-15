@@ -100,7 +100,7 @@
  
     }
 
-    $: buttonText = loading ? 'Findng account...' : (emailFound ? 'Continue' : 'Confirm email');
+    $: buttonText = loading ? 'Finding account...' : (emailFound ? 'Continue' : 'Confirm email');
 </script>
 
 

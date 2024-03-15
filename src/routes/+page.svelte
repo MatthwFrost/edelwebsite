@@ -102,11 +102,11 @@
 <!-- <div class="banner">
     <span>There has been failure with Edel. An update is being released soon, addressing this issue.</span>
 </div> -->
-<main class="w-[100vw] h-[100vh] flex justify-center items-center bg-cover" style="background-image: url('/buycredits_backgorund.png')">
+<main class="w-[100vw] h-[100vh] flex justify-center items-center bg-cover text-slate-100" style="background-image: url('/main4.png')">
     <div class="flex flex-col items-center">
         <div class="flex flex-row">
             <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14">
-            <h1 class="lg:text-8xl text-6xl font-bold"> Readel.</h1>
+            <h1 class="lg:text-8xl text-6xl font-bold">Readel.</h1>
         </div>
         <div class="flex flex-row">
             <div class="p-2 font-medium">
