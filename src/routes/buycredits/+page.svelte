@@ -48,8 +48,8 @@
             }
             return res.json().then(json => Promise.reject(json))
         }).then(({ url }) => {
-            // console.log(url)
-            window.location = url;
+            console.log(url)
+            // window.location = url;
         }).catch(e => {
             console.error(e);
         })
@@ -123,9 +123,9 @@
     <section class="md:w-[50vw] w-[100vw] h-[100vh] bg-zinc-100 flex flex-col justify-center items-center p-10 " style="background-image: url('/buycredits_right.png');">
         <div class="items-start md:w-[40vw]">
             {#if !email_entered}
-                <div transition:fade={{ duration: 50, delay: 0 }}>
-                    <h1 class="text-2xl">Enter email</h1>
-                    <p class="text-gray-500">Enter the email that is linked to your Readel account.</p>
+                <div>
+                    <h1 class="text-lg">Enter email</h1>
+                    <p class="text-gray-500 text-md">Enter the email that is linked to your Readel account.</p>
                     <input
                         class="md:w-[90%] w-[90vw] h-14 mt-5 mb-2 rounded-lg outline flex flex-row items-center px-4 {emailFound ? 'outline-2 outline-green-600' : ''}"
                         placeholder="Enter email"
@@ -134,9 +134,9 @@
                     >
                     <div class="h-8">
                         {#if emailFound === true}
-                            <p class="text-green-600 md:text-2xl text-sm">Provided email is linked to an Readel account. You can continue.</p>
+                            <p class="text-green-600 md:text-md text-sm">Provided email is linked to an Readel account. You can continue.</p>
                         {:else if emailFound === false}
-                            <p class="text-red-600">We can't find an account linked to your email.</p>
+                            <p class="text-red-600 md:text-md text-sm">We can't find an account linked to your email.</p>
                         {/if}
                     </div>
                     <button 
@@ -149,7 +149,7 @@
                     </button>
                 </div>
             {:else}
-                <div transition:fade={{ duration: 50, delay: 100 }}>
+                <div>
                     <h2 class="text-2xl leading-none tracking-tight">Selected amount of credits:</h2>
                     {#each options as option}
                         <button 

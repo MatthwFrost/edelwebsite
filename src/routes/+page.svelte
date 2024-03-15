@@ -105,43 +105,43 @@
 <main class="w-[100vw] h-[100vh] flex justify-center items-center bg-cover text-slate-100" style="background-image: url('/main4.png')">
     <div class="flex flex-col items-center">
         <div class="flex flex-row">
-            <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14">
-            <h1 class="lg:text-8xl text-6xl font-bold">Readel.</h1>
+            <!-- <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14"> -->
+            <h1 class="lg:text-8xl text-6xl font-bold text-center">Readel</h1>
         </div>
         <div class="flex flex-row">
-            <div class="p-2 font-medium">
+            <div class="font-medium text-zinc-300">
                 Minimal <strong>text-to-speech</strong> browser extension. 
             </div>
         </div>
         <div class="flex flex-row pt-10">
             <div class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 font-medium">
-                <div class="flex flex-row items-center justify-center">
+                <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="https://chromewebstore.google.com/detail/edel-ai-text-to-speech/mleknmnljocojhodiblcnbgffbhckihd" target="_blank">Install</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
-                <div class="flex flex-row items-center justify-center">
+                <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="/buycredits">Buy credits</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
-                <div class="flex flex-row items-center justify-center">
+                <div class="flex flex-row items-center justify-center  transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
-                <div class="flex flex-row items-center justify-center">
+                <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" target="_blank">Give Feeback</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
-                <div class="flex flex-row items-center justify-center">
+                <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="https://twitter.com/matthwfrst" target="_blank">Contact</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
-                <div class="flex flex-row items-center justify-center">
+                <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="/privacy" target="_blank">Privacy</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
             </div>
         </div>
-        <div class="m-10">
+        <div class="my-10">
             <button on:click={() => getAudio()} type="button" class="text-blue-100 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{source ? 'Pause audio' : 'Play sample'}</button>
         </div>
     </div>
