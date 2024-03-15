@@ -48,8 +48,8 @@
             }
             return res.json().then(json => Promise.reject(json))
         }).then(({ url }) => {
-            console.log(url)
-            // window.location = url;
+            // console.log(url)
+            window.location = url;
         }).catch(e => {
             console.error(e);
         })
@@ -81,7 +81,7 @@
                     }
                     return res.json().then(json => Promise.reject(json))
                 }).then(({ data }) => {
-                    console.log("Found user: ", data);
+                    // console.log("Found user: ", data);
                     emailFound = true;
                     loading = false;
                 }).catch(e => {

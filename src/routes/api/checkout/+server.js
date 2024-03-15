@@ -44,7 +44,7 @@ export const POST = async ({request, res}) => {
         });
         console.log(session);
 
-        return new Response(JSON.stringify({ url: session}))
+        return new Response(JSON.stringify({ url: session.url }))
     } catch (e) {
         return new Response(JSON.stringify({status: 500}))
     }
