@@ -1,6 +1,7 @@
 <script>
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
+    import Footer from '$lib/components/Footer.svelte'
     let source;
     let show = null;
     let currentDate = new Date();
@@ -102,7 +103,7 @@
 <!-- <div class="banner">
     <span>There has been failure with Edel. An update is being released soon, addressing this issue.</span>
 </div> -->
-<main class="w-[100vw] h-[100vh] flex justify-center items-center bg-cover text-slate-100" style="background-image: url('/main4.png')">
+<main class=" h-[100vh] flex justify-center items-center bg-cover text-slate-100" style="background-image: url('/main4.png')">
     <div class="flex flex-col items-center">
         <div class="flex flex-row">
             <!-- <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14"> -->
@@ -123,6 +124,10 @@
                     <a class="mr-2" href="/buycredits">Buy credits</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
+                <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
+                    <a class="mr-2" href="/updates" target="_blank">Updates</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </div>
                 <div class="flex flex-row items-center justify-center  transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" target="_blank">Report error</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -133,10 +138,6 @@
                 </div>
                 <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
                     <a class="mr-2" href="https://twitter.com/matthwfrst" target="_blank">Contact</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </div>
-                <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
-                    <a class="mr-2" href="/privacy" target="_blank">Privacy</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
             </div>
