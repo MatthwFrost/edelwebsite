@@ -19,6 +19,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.2.2",
 		"elevenlabs": "^0.1.5",
 		"stripe": "^14.20.0",
 		"svelte-loading-spinners": "^0.3.4"

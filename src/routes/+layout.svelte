@@ -1,6 +1,7 @@
 <script>
     /** @type {import('./$types').LayoutData} */
     import "../app.css";
+    import { inject } from '@vercel/analytics'
 </script>
 
 <slot />
