@@ -106,7 +106,7 @@
 <main class=" h-[100vh] flex justify-center items-center bg-cover text-slate-100" style="background-image: url('/main4.png')">
     <div class="flex flex-col items-center">
         <div class="flex flex-row">
-            <!-- <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14"> -->
+            <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14">
             <h1 class="lg:text-8xl text-6xl font-bold text-center">Readel</h1>
         </div>
         <div class="flex flex-row">
