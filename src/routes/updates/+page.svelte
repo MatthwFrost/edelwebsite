@@ -21,7 +21,7 @@
                 <p class="update-desc">
                     You are now able to purchase credits for Readel. <strong>This is where your feedback is important.</strong>
                     Please be candid on what you think about the prices or payment model. I want 
-                    to pick one you are all happy with. Let me know via the feedback<a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" class="underline">feedback</a>
+                    to pick one you are all happy with. Let me know via the <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" class="underline">feedback</a>
                 </p>
             </div>
             <div class="update-container">
