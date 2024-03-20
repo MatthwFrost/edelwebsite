@@ -23,9 +23,9 @@
     }
 
     let options = [
-        { id: 1, chars: '10,000 Characters', price: (Math.floor((10000 * 0.00032) * 100) / 100).toFixed(2), readTime: readTime(10000)},
-        { id: 2, chars: '30,000 Characters', price: (Math.floor((30000 * 0.00028) * 100) / 100).toFixed(2), readTime: readTime(30000)},
-        { id: 3, chars: '90,000 Characters', price: (Math.floor((90000 * 0.00024) * 100) / 100).toFixed(2), readTime: readTime(90000)},
+        { id: 1, chars: '30,000 Characters', price: (Math.floor((10000 * 0.00032) * 100) / 100).toFixed(2), readTime: readTime(10000)},
+        { id: 2, chars: '90,000 Characters', price: (Math.floor((30000 * 0.00028) * 100) / 100).toFixed(2), readTime: readTime(30000)},
+        { id: 3, chars: '200,000 Characters', price: (Math.floor((90000 * 0.00024) * 100) / 100).toFixed(2), readTime: readTime(90000)},
         // { id: 4, chars: '100,000 Characters' }
     ];
     let selectedOption = null;
@@ -105,19 +105,22 @@
 
 
 <main class="w-[100vw] flex flex-row">
-<section class="md:w-[50vw] hidden h-[100vh] p-10 bg-[rgb(254,241,24)] md:flex flex-col justify-center" style="background-image: url('/buycredits_backgorund.png');">
-        <section class="bg-fixed absolute top-0 left-0 px-10 py-20 text-[rgb(14, 19, 24)]">
+<section class="md:w-[50vw] hidden h-[100vh] p-24 bg-[rgb(254,241,24)] md:flex flex-col justify-center" style="background-image: url('/buycredits_backgorund.png');">
+        <section class="bg-fixed absolute top-0 left-0 px-24 py-20 text-[rgb(14, 19, 24)]">
             <a href="/" class="flex flex-row items-center font-bold ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
                  Back
             </a>
         </section>
         <div>
-            <div class="flex flex-row justify-content items-center">
+            <div class="flex flex-row justify-content items-center w-[80vw]">
                 <!-- <img class="w-[4vw]" src="/newicon.png" alt="Edel icon"> -->
-                <h1 class="text-6xl leading-none tracking-tight text-[rgb(14, 19, 24)] font-bold">Purchase credits.</h1>
+                <h1 class="text-6xl leading-none tracking-tight text-[rgb(14, 19, 24)] font-bold">Get credits.</h1>
             </div>
-            <p class="py-4 text-lg">Grab extra credits to continue listening with Readel. Enjoy your listening!</p>
+            <p class="pt-4 text-lg">Grab extra credits to continue listening with Readel. Enjoy your listening! Get started
+                By finding your Readel account.
+            </p>
+            <p class="py-4 text-lg"><a href="credits" class="underline">Why credits?</a></p>
         </div>
     </section>
     <section class="md:w-[50vw] w-[100vw] h-[100vh] bg-zinc-100 flex flex-col justify-center items-center p-10 " style="background-image: url('/buycredits_right.png');">
@@ -155,7 +158,7 @@
                         <button 
                             class="w-full h-14 my-5 rounded-lg outline flex flex-row items-center px-4 {selectedOption === option.id ? 'bg-blue-500 outline-blue-200 text-slate-50' : ''}" 
                             on:click={() => {selectedOption = selectedOption === option.id ? null : option.id}}>
-                            <span class="font-medium">${option.price} </span>&nbsp;&#8226; {option.chars} 
+                            <span class="">${option.price} </span>&nbsp;&#8226;&nbsp; <span class="font-bold">{option.chars}</span>
                         </button>
                     {/each}
                     <div class="flex flex-row justify-between items-center">
@@ -168,6 +171,7 @@
                 <!-- <p>You selected: {selectedOption}</p> -->
                 </div>
             {/if}
+            <p class="py-10 text-gray-500 text-sm">All payments are handled by <a href="https://www.stripe.com" class="underline">Stripe</a>. I do not handle payments or hold the personal information of users.</p>
         </div>
     </section>
 </main>
