@@ -2,7 +2,30 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        blob: "blob 20s infinite",
+      },
+      keyframes:{
+        blob: {
+          "0%":{
+            transform: "translate(0px, 0px) scale(1)"
+          },
+          "33%":  {
+            transform: "translate(-100px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(160px, -105px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)"
+          }
+        }
+      }
+    },
+    fontFamily: {
+      'sans': ['Rubik']
+    }
   },
   plugins: [],
 }

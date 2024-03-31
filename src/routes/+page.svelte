@@ -103,14 +103,19 @@
 <!-- <div class="banner">
     <span>There has been failure with Edel. An update is being released soon, addressing this issue.</span>
 </div> -->
-<main class=" h-[100vh] flex justify-center items-center bg-cover text-slate-100" style="background-image: url('/main4.png')">
-    <div class="flex flex-col items-center">
+<main class=" h-[100vh] flex justify-center items-center  text-slate-100 font-sans bg-blue-600">
+    <div class=" w-[60vw] h-[60vw] bg-blue-200 rounded-full filter blur-md fixed mix-blend-multiply animate-blob left-10 top-[-50] animation-delay-4000"></div>
+    <div class=" w-[40vw] h-[40vw] bg-blue-200 rounded-full filter blur-md fixed mix-blend-multiply animate-blob left-30 top-60 animation-delay-3000"></div>
+    <div class=" w-[50vw] h-[50vw] bg-blue-200 rounded-full filter blur-md fixed mix-blend-multiply animate-blob right-0 bottom-10 animation-delay-1000"></div>
+    <div class=" w-[30vw] h-[30vw] bg-blue-200 rounded-full filter blur-md fixed mix-blend-multiply animate-blob left-0 bottom-10 animation-delay-1000"></div>
+    <div class=" w-[70vw] h-[70vw] bg-blue-200 rounded-full filter blur-md fixed mix-blend-multiply animate-blob right-0 top-10 animation-delay-4000"></div>
+    <div class="flex flex-col items-center z-10">
         <div class="flex flex-row">
             <img src="/newicon.png" alt="Edel icon" class="md:w-24 md:h-24 w-14 h-14">
-            <h1 class="lg:text-8xl text-6xl font-bold text-center">Readel</h1>
+            <h1 class="lg:text-8xl text-6xl font-bold text-center ">Readel</h1>
         </div>
         <div class="flex flex-row">
-            <div class="font-medium text-zinc-300">
+            <div class="font-medium text-zinc-100">
                 Minimal <strong>text-to-speech</strong> browser extension. 
             </div>
         </div>
@@ -121,7 +126,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
                 <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
-                    <a class="mr-2" href="/buycredits">Get credits</a>
+                    <a class="mr-2" href="https://ag7phnq517o.typeform.com/to/l5CF8S1H" target="_blank">Feature Vote</a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </div>
                 <div class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125">
@@ -144,6 +149,12 @@
         </div>
         <div class="my-10">
             <button on:click={() => getAudio()} type="button" class="text-blue-100 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{source ? 'Pause audio' : 'Play sample'}</button>
+        </div>
+        <div class="w-[100%] fixed bottom-2 flex flex-col justify-center items-center">
+            <h1 class="px-4 text-sm">Supported by </h1>
+            <a href="https://elevenlabs.io/text-to-speech">
+                <img src="https://storage.googleapis.com/eleven-public-cdn/images/elevenlabs_grants_white.png" alt="Text to Speech" style="width:150px">
+            </a>
         </div>
     </div>
 </main>

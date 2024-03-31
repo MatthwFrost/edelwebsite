@@ -8,11 +8,31 @@
             Home 
     </a>
 </section>
-<main class="bg-[#01634F] w-full min-h-[100vh] h-full pt-56">
+<main class="bg-[#01634F] w-full min-h-[100vh] h-full pt-56 font-sans">
     <div class="md:px-24 p-4">
         <div class="Title">
             <h1 class="text-green-100 font-bold md:text-6xl text-4xl">Readel updates</h1>
             <p class="text-green-400 text-2xl">Find the recent updates and learn what's new to Readel.</p>
+        </div>
+        <div class="update-main">
+            <h2 class="update-heading">31/03/2024 • 1.4.2</h2>
+            <div class="update-container">
+                <h4 class="update-item">Readel is now FREE.</h4>
+                <p class="update-desc">
+                    Readel was succesfully picked to be part of <a href="https://elevenlabs.io/text-to-speech" class="underline">ElevenLabs grant</a> program and now has access to
+                    better recources and free credits. This means that I can remove the cost of Readel for the time being.
+                </p>
+            </div>
+            <div class="update-container">
+                <h4 class="update-item">Skip to the next track.</h4>
+                <p class="update-desc">You can now skip to the next sentence. Personally, my favourite feature in this update.</p>
+            </div>
+            <div class="update-container">
+                <h4 class="update-item">More UI updates.</h4>
+                <p class="update-desc">
+                    I've made some improvements to Readel's UI again. The button is now in the middle right side of the screen to stop the button from getting in the way. Please let me know what you think of the change.
+                </p>
+            </div>
         </div>
         <div class="update-main">
             <h2 class="update-heading">15/03/2024 • 1.4.1</h2>
@@ -21,7 +41,7 @@
                 <p class="update-desc">
                     You are now able to purchase credits for Readel. <strong>This is where your feedback is important.</strong>
                     Please be candid on what you think about the prices or payment model. I want 
-                    to pick one you are all happy with. Let me know via the <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" class="underline">feedback</a>
+                    to pick one you are all happy with. Let me know via the <a href="https://ag7phnq517o.typeform.com/to/K5GTEV9L" class="underline">feedback</a>.
                 </p>
             </div>
             <div class="update-container">

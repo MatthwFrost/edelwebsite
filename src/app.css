@@ -1,13 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+      font-family: Rubik, system-ui sans-serif;
+    }
+  }
+
+@layer utilities {
+    .animation-delay-1000 {
+        animation-delay: 1s
+    }
+    .animation-delay-2000 {
+        animation-delay: 5s
+    }
+    .animation-delay-3000 {
+        animation-delay: 10s
+    }
+    .animation-delay-4000 {
+        animation-delay: 8s
+    }
+}
 
 @layer components {
     .update-main {
         @apply space-y-5 mt-20 pb-10
     }
     .update-container {
-    @apply h-full md:px-10 px-2
+    @apply h-full md:px-10 px-0
     }
     .update-heading{
     @apply text-green-400 md:text-4xl text-lg font-bold opacity-50;
