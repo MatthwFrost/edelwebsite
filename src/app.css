@@ -26,18 +26,18 @@
 
 @layer components {
     .update-main {
-        @apply space-y-5 mt-20 pb-10
+    @apply space-y-5 mt-20 pb-10
     }
     .update-container {
     @apply h-full md:px-10 px-0
     }
     .update-heading{
-    @apply text-green-400 md:text-4xl text-lg font-bold opacity-50;
+    @apply text-blue-400 md:text-4xl text-lg font-bold opacity-50;
     }
     .update-item{
-    @apply  text-green-100 pt-10 md:text-4xl text-2xl font-semibold
+    @apply  text-blue-100 pt-10 md:text-4xl text-2xl font-semibold
     }
     .update-desc{
-    @apply  text-green-300 md:text-2xl text-lg md:w-[55vw] pt-2 opacity-75
+    @apply  text-blue-300 md:text-2xl text-lg md:w-[55vw] pt-2 opacity-95
     }
     }

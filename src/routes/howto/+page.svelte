@@ -17,24 +17,29 @@
             Home 
     </a>
 </section>
-<main class="bg-[#01634F] w-full min-h-[100vh] h-full pt-56 font-sans ">
+<main class="bg-blue-600 w-full min-h-[100vh] h-full pt-56 font-sans ">
     <div class="md:px-24 p-4 z-0">
         <div class="Title">
-            <h1 class="text-green-100 font-bold md:text-6xl text-4xl">Readel updates</h1>
-            <p class="text-green-400 text-2xl">Find the recent updates and learn what's new to Readel.</p>
+            <h1 class="text-blue-100 font-bold md:text-6xl text-4xl">Getting started - Guide</h1>
+            <p class="text-blue-100 text-2xl">Learn how to use Readel.</p>
         </div>
         <div class="update-main">
-            <h2 class="update-heading">31/03/2024 • 1.4.2</h2>
+            <h2 class="update-heading">Beginning</h2>
             <div class="update-container">
-                <h4 class="update-item">Readel is now FREE.</h4>
+                <h4 class="update-item">Install the extension</h4>
                 <p class="update-desc">
-                    Readel was succesfully picked to be part of <a href="https://elevenlabs.io/text-to-speech" class="underline">ElevenLabs grant</a> program and now has access to
-                    better recources and free credits. This means that I can remove the cost of Readel for the time being.
+                    You can install the extension here, the <a href="" class="underline">Google Chrome store</a>. You will be
+                    prompted to login to a Google account. 
+                </p>
+                <p class="update-desc mt-2">
+                    <strong>If you aren't pompted to sign in</strong> click on the "Readel icon" in the extension tab, where you
+                    will find a login button. <a href="" class="underline">Why do I need to log in</a>.
                 </p>
             </div>
             <div class="update-container">
-                <h4 class="update-item">Skip to the next track.</h4>
-                <p class="update-desc">You can now skip to the next sentence. Personally, my favourite feature in this update.</p>
+                <h4 class="update-item">Get listening</h4>
+                <p class="update-desc">Once Readel is installed, you will be able to find a blue play button on the right, middle side of the screen.</p>
+                <p class="update-desc mt-2">The play button will appear one webpages with lots of text content, like this one.</p>
             </div>
             <div class="update-container">
                 <h4 class="update-item">More UI updates.</h4>
