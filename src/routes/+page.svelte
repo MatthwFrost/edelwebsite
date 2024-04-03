@@ -116,7 +116,7 @@
 <main
     class=" h-[100vh] flex justify-center items-center text-slate-100 font-sans bg-blue-600 content"
 >
-    <div class="fixed w-[100vw] h-[100vh] filter blur-[0.7px] ">
+    <div class="fixed w-[100vw] h-[100vh] filter blur-[0.7px] opacity-50 ">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 2000 2000" width="2000" height="2000"><defs><filter id="nnnoise-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
             <feTurbulence type="turbulence" baseFrequency="0.178" numOctaves="4" seed="15" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence>
             <feSpecularLighting surfaceScale="18" specularConstant="2" specularExponent="20" lighting-color="#0094ff" x="0%" y="0%" width="100%" height="100%" in="turbulence" result="specularLighting">
@@ -220,27 +220,16 @@
                 <div
                     class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125"
                 >
-                    <a class="mr-2" href="/updates">Updates</a>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-external-link"
-                        ><path
-                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                        /><polyline points="15 3 21 3 21 9" /><line
-                            x1="10"
-                            y1="14"
-                            x2="21"
-                            y2="3"
-                        /></svg
+                    <a
+                        class="mr-2"
+                        href="/howto"
+                        >How to</a
                     >
+                </div>
+                <div
+                    class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125"
+                >
+                    <a class="mr-2" href="/updates">Updates</a>
                 </div>
                 <div
                     class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125"
@@ -278,35 +267,6 @@
                         class="mr-2"
                         href="https://ag7phnq517o.typeform.com/to/K5GTEV9L"
                         target="_blank">Give Feeback</a
-                    >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-external-link"
-                        ><path
-                            d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                        /><polyline points="15 3 21 3 21 9" /><line
-                            x1="10"
-                            y1="14"
-                            x2="21"
-                            y2="3"
-                        /></svg
-                    >
-                </div>
-                <div
-                    class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125"
-                >
-                    <a
-                        class="mr-2"
-                        href="https://twitter.com/matthwfrst"
-                        target="_blank">Contact</a
                     >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
