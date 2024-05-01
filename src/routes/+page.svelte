@@ -116,6 +116,9 @@
 <main
     class=" h-[100vh] flex justify-center items-center text-slate-100 font-sans bg-blue-600 content"
 >
+    <div class="fixed">
+        <h1 class="font-sans text-[50vw] opacity-10">1.4.4</h1>
+    </div>
     <div class="fixed w-[100vw] h-[100vh] filter blur-[0.7px] opacity-50 ">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 2000 2000" width="2000" height="2000"><defs><filter id="nnnoise-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
             <feTurbulence type="turbulence" baseFrequency="0.178" numOctaves="4" seed="15" stitchTiles="stitch" x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence>
