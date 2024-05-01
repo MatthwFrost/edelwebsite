@@ -1,6 +1,6 @@
 <script></script>
 
-<main class="h-[100vh] flex justify-center items-center font-sans">
+<main class="flex justify-center items-center font-sans overflow-scroll">
     <article class="w-[50vw]">
         <h1 class="text-6xl font-bold">Lots of text content</h1>
         <p class="text-2xl">
