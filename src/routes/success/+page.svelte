@@ -13,6 +13,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="rgb(29 78 216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         <h1 class="text-2xl font-bold py-2">Payment was successful.</h1> 
         <p>Thank you for your purchase. You credits have been added to you account!</p>
-        <span class="fixed bottom-0 pb-10">Please contact <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" class="underline" >here</a>, if you have an error.</span>
+        <span class="fixed bottom-0 pb-10">Please contact <a href="https://ag7phnq517o.typeform.com/to/kEKKBCGF" class="underline" >here</a>, if you encounter an error.</span>
     </main>
 </body>

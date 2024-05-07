@@ -127,7 +127,7 @@
             {#if !email_entered}
                 <div>
                     <h1 class="text-lg">Enter email</h1>
-                    <p class="text-gray-500 text-md">Enter the email that is linked to your Readel account.</p>
+                    <p class="text-gray-500 text-md">Please provide the email that is linked to your Readel account.</p>
                     <input
                         class="md:w-[90%] w-[90vw] h-14 mt-5 mb-2 rounded-lg border flex flex-row items-center px-4 {emailFound ? 'border-2 border-green-600' : ''}"
                         placeholder="Enter email"
