@@ -6,7 +6,7 @@ export const POST = async ({request, res}) => {
         let credits;
         console.log(data);
         const price_key = {
-            1: 'price_1OuLumFXFyh38aRKIYT9QuVN' ,
+            1: 'price_1PDlwmFXFyh38aRKTcnopdyQ' ,
             2: 'price_1OuLwqFXFyh38aRKprACldEH',
             3: 'price_1OuLxVFXFyh38aRK2hRGNuRs',
         }

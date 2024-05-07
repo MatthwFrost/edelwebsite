@@ -23,7 +23,7 @@
     }
 
     let options = [
-        { id: 1, chars: '30,000 Characters', price: (Math.floor((10000 * 0.00032) * 100) / 100).toFixed(2), readTime: readTime(10000)},
+        { id: 1, chars: '30,000 Characters', price: (4.20).toFixed(2)},
         { id: 2, chars: '90,000 Characters', price: (Math.floor((30000 * 0.00028) * 100) / 100).toFixed(2), readTime: readTime(30000)},
         { id: 3, chars: '200,000 Characters', price: (Math.floor((90000 * 0.00024) * 100) / 100).toFixed(2), readTime: readTime(90000)},
         // { id: 4, chars: '100,000 Characters' }
@@ -66,7 +66,6 @@
             if (isValidEmail(entered)) {
                 loading = true;
                 // Proceed with email confirmation
-                console.log("Email is valid, proceeding with confirmation.");
                 fetch(`/api/confirm-email`, {
                     method: 'POST',
                     headers: {
@@ -91,7 +90,7 @@
                 }) 
                     // Your confirmEmail logic here
             } else {
-                console.log("Invalid email address.");
+                console.error("Invalid email address.");
                 // Handle invalid email (optional)
             }
         }else{
@@ -105,7 +104,7 @@
 
 
 <main class="w-[100vw] flex flex-row">
-<section class="md:w-[50vw] hidden h-[100vh] p-24 bg-[rgb(254,241,24)] md:flex flex-col justify-center" style="background-image: url('/buycredits_backgorund.png');">
+<section class="md:w-[50vw] hidden h-[100vh] p-24 bg-[rgb(254,241,24, 0.5)] md:flex flex-col justify-center" style="background-image: url('/buycredits_backgorund.png');">
         <section class="bg-fixed absolute top-0 left-0 px-24 py-20 text-[rgb(14, 19, 24)]">
             <a href="/" class="flex flex-row items-center font-bold ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
@@ -117,10 +116,10 @@
                 <!-- <img class="w-[4vw]" src="/newicon.png" alt="Edel icon"> -->
                 <h1 class="text-6xl leading-none tracking-tight text-[rgb(14, 19, 24)] font-bold">Get credits.</h1>
             </div>
-            <p class="pt-4 text-lg">Grab extra credits to continue listening with Readel. Enjoy your listening! Get started
-                By finding your Readel account.
+            <p class="pt-4 text-lg">Grab extra credits to continue listening with Readel. Get started
+                by finding your Readel account.
             </p>
-            <p class="py-4 text-lg"><a href="credits" class="underline">Why credits?</a></p>
+            <!-- <p class="py-4 text-lg"><a href="credits" class="underline">Why credits?</a></p> -->
         </div>
     </section>
     <section class="md:w-[50vw] w-[100vw] h-[100vh] bg-zinc-100 flex flex-col justify-center items-center p-10 " style="background-image: url('/buycredits_right.png');">
@@ -130,7 +129,7 @@
                     <h1 class="text-lg">Enter email</h1>
                     <p class="text-gray-500 text-md">Enter the email that is linked to your Readel account.</p>
                     <input
-                        class="md:w-[90%] w-[90vw] h-14 mt-5 mb-2 rounded-lg outline flex flex-row items-center px-4 {emailFound ? 'outline-2 outline-green-600' : ''}"
+                        class="md:w-[90%] w-[90vw] h-14 mt-5 mb-2 rounded-lg border flex flex-row items-center px-4 {emailFound ? 'border-2 border-green-600' : ''}"
                         placeholder="Enter email"
                         bind:value="{entered}"
                         type="email"
@@ -146,17 +145,18 @@
                         type="submit" 
                         on:click="{confirmEmail}" 
                         disabled={!isValidEmail(entered)}
-                        class="md:w-[30%] w-[60%] bg-blue-500 text-white py-2 px-4 mt-2 md:mt-0 rounded {!isValidEmail(entered) ? 'cursor-not-allowed opacity-50': 'hover:bg-blue-600'}"
+                        class="md:w-[30%] w-[60%] text-white py-2 px-4 mt-2 md:mt-0 rounded {!isValidEmail(entered) ? 'cursor-not-allowed opacity-50': 'hover:bg-blue-600'} {emailFound ? 'bg-green-600 hover:bg-green-700': 'bg-blue-500'}"
                     >
                         {buttonText}
                     </button>
                 </div>
             {:else}
                 <div>
-                    <h2 class="text-2xl leading-none tracking-tight">Selected amount of credits:</h2>
+                    <h2 class="text-2xl leading-none tracking-tight">Selected amount of characters you get <strong>daily</strong>:</h2>
+                    <p class="mt-4">Characters will be <strong>added</strong> to your current daily total. For example, If your current daily limit is 10,000 characters, and you purchase 30,000 now. You will have 40,000 credits to use daily.</p>
                     {#each options as option}
                         <button 
-                            class="w-full h-14 my-5 rounded-lg outline flex flex-row items-center px-4 {selectedOption === option.id ? 'bg-blue-500 outline-blue-200 text-slate-50' : ''}" 
+                            class="w-full h-14 my-5 rounded-lg border flex flex-row items-center px-4 {selectedOption === option.id ? 'bg-blue-500 border-blue-200 text-slate-50' : ''}" 
                             on:click={() => {selectedOption = selectedOption === option.id ? null : option.id}}>
                             <span class="">${option.price} </span>&nbsp;&#8226;&nbsp; <span class="font-bold">{option.chars}</span>
                         </button>
