@@ -232,12 +232,12 @@
                 <div
                     class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125"
                 >
-                    <a class="mr-2" href="/buycredits">Buy credits</a>
+                    <a class="mr-2" href="/buycredits">NEW - Buy credits</a>
                 </div>
                 <div
                     class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125"
                 >
-                    <a class="mr-2" href="/updates">Updates</a>
+                    <a class="mr-2" href="/updates">NEW - Updates</a>
                 </div>
                 <div
                     class="flex flex-row items-center justify-center transform transition duration-100 hover:scale-125"
