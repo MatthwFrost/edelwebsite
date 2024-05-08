@@ -27,15 +27,15 @@
         { id: 1, chars: "30,000 Characters", price: (4.2).toFixed(2) },
         {
             id: 2,
-            chars: "90,000 Characters",
-            price: (Math.floor(30000 * 0.00028 * 100) / 100).toFixed(2),
-            readTime: readTime(30000),
+            chars: "60,000 Characters",
+            price: (8.39).toFixed(2),
+            readTime: readTime(60000),
         },
         {
             id: 3,
-            chars: "200,000 Characters",
-            price: (Math.floor(90000 * 0.00024 * 100) / 100).toFixed(2),
-            readTime: readTime(90000),
+            chars: "150,000 Characters",
+            price: (21.60).toFixed(2),
+            readTime: readTime(150000),
         },
         // { id: 4, chars: '100,000 Characters' }
     ];

@@ -14,9 +14,9 @@ export const POST = async ({request, res}) => {
         if (data.id === 1){
             credits = 30000;
         }else if (data.id === 2){
-            credits = 90000;
+            credits = 60000;
         } else if (data.id === 3){
-            credits = 200000
+            credits = 150000
         }
         // console.log(price_key[data.id]);
         // console.log(price_key[data.email]);
