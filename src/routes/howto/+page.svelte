@@ -141,9 +141,10 @@
                 <p class="blue-update-desc">
                     I have built a place where you can try and explore the
                     extension. Be aware that using the playground will use up
-                    your daily character quota. The playground is 1724
-                    characters long. This may vary, if I change the story and
-                    forget to update this stat.
+                    your daily character quota.
+                </p>
+                <p class="blue-update-desc">
+                    <a href="/playground">Try the playground</a>
                 </p>
             </div>
             <div class="blue-update-container">
