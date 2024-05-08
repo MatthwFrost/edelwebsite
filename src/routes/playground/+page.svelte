@@ -25,6 +25,7 @@
   </section>
   <article class="w-[50vw] mt-52 mb-52">
     <h1 class="text-6xl font-bold">A short story</h1>
+    <p class="opacity-60">Read: 3 min 34s | Charcters: 3840</p>
     <p class="text-2xl">
       In the quaint village of Willow Creek, nestled between golden hills and
       vast skies, lived an old man named Elliott. Elliott had spent most of his
