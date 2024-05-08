@@ -143,8 +143,8 @@
                     extension. Be aware that using the playground will use up
                     your daily character quota.
                 </p>
-                <p class="blue-update-desc">
-                    <a href="/playground">Try the playground</a>
+                <p class="blue-update-desc mt-2">
+                    <a href="/playground" class="underline">Try the playground</a>
                 </p>
             </div>
             <div class="blue-update-container">
