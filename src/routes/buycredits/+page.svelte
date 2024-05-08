@@ -163,7 +163,7 @@
                 started by finding your Readel account.
             </p>
             <!--/ <p class="py-4 text-lg"><a href="credits" class="underline">Why credits?</a></p> -->
-            <div class=" mt-10 bg-[#FFFB28] p-10 border border-neutral-700 rounded-sm shadow-lg">
+            <div class=" mt-10 bg-[rgba(255, 251, 40, 1)] p-10 border border-neutral-700 rounded-lg shadow-lg">
                 <h1
                     class="text-2xl leading-none tracking-tight text-[rgb(14, 19, 24)] font-bold"
                 >
