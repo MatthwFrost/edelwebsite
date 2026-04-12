@@ -92,6 +92,35 @@
             </p>
         </div>
         <div class="update-main">
+            <h2 class="update-heading">13/04/2026 • 2.0.0</h2>
+            <div class="update-container">
+                <h4 class="update-item">Okay, big one. Readel 2.0.</h4>
+                <p class="update-desc">
+                    I've been wanting to do this for a while. I scrapped the old readel app and built a new one.
+                    It should be faster, more reliable and have better audio quality. My motivation for this was the idea
+                    I had to interact with the tool. Pressing alt and hovering to read is something was interesting and felt
+                    it was something I needed when using the old readel.
+                </p>
+            </div>
+ 
+            <div class="update-container">
+                <h4 class="update-item">It's free now.</h4>
+                <p class="update-desc">
+                    No more character limits, no more sign-in. Just install and use it.
+                    I wrote a bit about why on the <a href="/free" class="underline">how is it free</a> page
+                    if you're curious. Basicially, I enjoy it and think its cool. And hope you do too.
+                </p>
+            </div>
+            <div class="update-container">
+                <h4 class="update-item">And finally.</h4>
+                <p class="update-desc">
+                    The popup is just voice, speed and volume now. That's all you need.
+                    As always, if something breaks or you have an idea, I'm easy to reach.
+                    Use the feedback link on the home page.
+                </p>
+            </div>
+        </div>
+        <div class="update-main">
             <h2 class="update-heading">08/05/2024 • 1.4.4</h2>
             <div class="update-container">
                 <h4 class="update-item">Big update time, PHEW.</h4>

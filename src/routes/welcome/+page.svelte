@@ -1,33 +1,49 @@
-<main class="h-[100vh] bg-blue-500 pt-36 md:px-24 left-0">
+<main class="h-[100vh] bg-blue-600 pt-36 md:px-24 px-4">
     <div>
-        <div class="">
-            <h1 class="md:text-6xl font-bold text-blue-900">Welcome to Readel</h1>
-            <p class="md:text-3xl text-blue-700">Welcome, this page will serve as a quick guide to get you started using Readel</p>
-        </div>
-        <div class="note-div w-[50vw] my-10">
-            <p class="text-blue-100"><span class="text-yellow-500">Note:</span> You will need Readel installed to follow this Tutorial. You can find and install the extension <a href="https://chromewebstore.google.com/detail/readel-ai-text-to-speech/mleknmnljocojhodiblcnbgffbhckihd" class="underline">here</a>.</p>
-        </div>
         <div>
-            <h3>Let's begin</h3>
-            <p>Start by highlighting the this paragraph, right click and click "Read aloud"</p>
-            <p>
-                "Under the cloak of night, Alex darted through the shadowy alley, the echo of hurried footsteps 
-                close behind. With his heart pounding and breath catching in the cold air, each turn became a gamble 
-                in this high-stakes game of cat and mouse. Ahead, the promise of escape: a narrow, unmarked door left 
-                ajar, light flickering from within. But with the chasers closing in, the decision to enter could mean 
-                safety or a trap. As adrenaline surged, Alex made the leap, diving into the unknown. What lay beyond was 
-                a mystery, but one thing was certain: the night was far from over."
-            </p> 
+            <h1 class="md:text-6xl text-4xl font-bold text-blue-100">Welcome to Readel</h1>
+            <p class="md:text-2xl text-lg text-blue-200 mt-2">You're all set. Here's how it works.</p>
+        </div>
+        <div class="note-div w-full max-w-lg my-10">
+            <p class="text-blue-100">
+                <span class="text-yellow-400 font-semibold">Tip:</span>
+                Pin the Readel extension icon in your toolbar for quick access to voice and speed settings.
+            </p>
+        </div>
+        <div class="space-y-8 max-w-2xl">
+            <div>
+                <h3 class="text-blue-100 font-semibold text-xl">Hold Alt to read</h3>
+                <p class="text-blue-200 mt-1">
+                    Hover over any paragraph on a webpage and hold the <strong class="text-blue-100">Alt</strong> key
+                    (Option on Mac). The text will highlight and start reading aloud. Release to stop.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-blue-100 font-semibold text-xl">Double-tap Alt for continuous reading</h3>
+                <p class="text-blue-200 mt-1">
+                    Double-tap <strong class="text-blue-100">Alt</strong> to read from the hovered paragraph
+                    through the rest of the page. Press Alt once to stop.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-blue-100 font-semibold text-xl">Try it now</h3>
+                <p class="text-blue-200 mt-1">
+                    Hover over this paragraph and hold Alt. Under the cloak of night, Alex darted through the shadowy alley,
+                    the echo of hurried footsteps close behind. With his heart pounding and breath catching in the cold air,
+                    each turn became a gamble in this high-stakes game of cat and mouse. Ahead, the promise of escape: a narrow,
+                    unmarked door left ajar, light flickering from within. As adrenaline surged, Alex made the leap, diving
+                    into the unknown. What lay beyond was a mystery, but one thing was certain: the night was far from over.
+                </p>
+            </div>
         </div>
     </div>
 </main>
 
-
 <style>
     .note-div {
-        padding: 10px;
+        padding: 12px 16px;
         background: rgba(36, 39, 93, 0.2);
-        border-radius: 16px;
+        border-radius: 12px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
