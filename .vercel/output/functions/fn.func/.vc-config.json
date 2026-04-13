@@ -1,6 +1,0 @@
-{
-	"runtime": "nodejs20.x",
-	"handler": "..\\..\\..\\..\\..\\..\\..\\Users\\matth\\OneDrive\\Dokumenter\\Readel\\edelwebsite\\.svelte-kit\\vercel-tmp\\index.js",
-	"launcherType": "Nodejs",
-	"experimentalResponseStreaming": true
-}
