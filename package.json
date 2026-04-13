@@ -24,6 +24,7 @@
 		"node": ">=20"
 	},
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^6.3.3",
 		"@vercel/analytics": "^1.2.2",
 		"@vercel/speed-insights": "^1.0.10",
 		"elevenlabs": "^0.1.5",
