@@ -25,7 +25,9 @@ export default {
       }
     },
     fontFamily: {
-      'sans': ['Rubik']
+      'sans': ['Rubik'],
+      'mono': ['"Space Mono"', 'ui-monospace', 'monospace'],
+      'serif': ['"Crimson Pro"', 'ui-serif', 'serif'],
     },
   }
 
