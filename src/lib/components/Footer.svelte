@@ -1,7 +1,7 @@
 <footer class="bg-black text-white px-6 md:px-14 py-10 border-t-[3px] border-white/10">
     <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-6">
         <div class="flex items-center gap-3">
-            <img src="/pixel-icon.png" alt="Readel" class="w-10 h-10" onerror="this.style.display='none'" />
+            <img src="/readel-icon-512.png" alt="Readel" class="w-10 h-10" onerror="this.style.display='none'" />
             <span class="font-black text-xl tracking-tight uppercase">Readel</span>
             <span class="font-mono text-[10px] tracking-[0.25em] opacity-50 uppercase">[beta]</span>
         </div>

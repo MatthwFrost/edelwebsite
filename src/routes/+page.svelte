@@ -51,7 +51,7 @@
             <div class="relative z-10 flex flex-col items-center text-center">
                 <!-- Logo + Title -->
                 <div class="flex items-center gap-3 mb-5">
-                    <img src="/pixel-icon.png" alt="Readel" class="w-12 h-12 md:w-16 md:h-16" onerror="this.style.display='none'"/>
+                    <img src="/readel-icon-512.png" alt="Readel" class="w-12 h-12 md:w-16 md:h-16" onerror="this.style.display='none'"/>
                     <h1 class="font-black tracking-tight uppercase text-5xl md:text-7xl leading-none">Readel</h1>
                 </div>
 
